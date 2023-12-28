@@ -195,34 +195,15 @@ body {
 }
 .ministry-container .tab-content .content p {
   font-family: Segoe UI;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0em;
+  line-height: 18px;
   text-align: left;
   color: #212121;
 }
-.ministry-container .tab-content .content .release-date {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-top: 12px;
+.ministry-container .tab-content .content .content-img img {
+  width: 100%;
+  height: 330px;
 }
-.ministry-container .tab-content .content .release-date .release {
-  background-color: #0000001a;
-  padding: 0px 6px;
-  color: #999999;
-  border-radius: 3px;
-  margin-right: 10px;
-}
-.ministry-container .tab-content .content .release-date h3 {
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #999999;
-  margin-right: 10px;
-}
+
 /* ================================= Ministry =============================== */
