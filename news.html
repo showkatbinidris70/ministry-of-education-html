@@ -19,38 +19,55 @@
     rel="stylesheet">
   <link rel="stylesheet" href="/assets/fonts/Segoe UI.ttf">
   <!-- custom css -->
-  <link rel="stylesheet" href="/assets/css/press-news.css">
+  <link rel="stylesheet" href="/assets/css/ministry-news.css">
   <title>Ministry of Education</title>
   <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
 </head>
 
 <body>
+  <!-- breadcrumb -->
+  <section class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-start text-uppercase">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">CURRENT ISSUES</a></li>
+        <li class="breadcrumb-item text-secondary active" aria-current="page">PRESS RELEASES AND NEWS</li>
+      </ol>
+    </nav>
+  </section>
   <!-- press release and news -->
-  <section class="container press-news-container mt-5">
+  <section class="container press-news-container mt-4">
     <div class="row">
       <!-- tab list -->
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-4 col-md-6">
         <div class="tab-list-header">
           <h2>বিষয়গুলি</h2>
           <hr>
         </div>
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-            type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">সর্বশেষ
+          <button class="nav-link active" id="v-pills-end-news-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-end-news" type="button" role="tab" aria-controls="v-pills-end-news"
+            aria-selected="true">সর্বশেষ
             খবর</button>
-          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-            type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-          <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
-            type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
-          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
-            type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
-            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+          <button class="nav-link" id="v-pills-notice-tab" data-bs-toggle="pill" data-bs-target="#v-pills-notice"
+            type="button" role="tab" aria-controls="v-pills-notice" aria-selected="false">নোটিশ বোর্ড</button>
+          <button class="nav-link" id="v-pills-order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-order"
+            type="button" role="tab" aria-controls="v-pills-order"
+            aria-selected="false">আদেশ/প্রজ্ঞাপন/নীতিমালা/পরিপত্র</button>
+          <button class="nav-link" id="v-pills-differtment-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-differtment" type="button" role="tab" aria-controls="v-pills-differtment"
+            aria-selected="false">বিভাগ সম্পর্কিত</button>
+          <button class="nav-link" id="v-pills-video-gallery-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-video-gallery" type="button" role="tab" aria-controls="v-pills-video-gallery"
+            aria-selected="false">ভিডিও গ্যালারী</button>
+          <button class="nav-link" id="v-pills-secondary-tab" data-bs-toggle="pill" data-bs-target="#v-pills-secondary"
+            type="button" role="tab" aria-controls="v-pills-secondary" aria-selected="false">মাধ্যমিক ও উচ্চ শিক্ষা
+            বিভাগ</button>
         </div>
 
       </div>
       <!-- tab-content -->
-      <div class="col-lg-9 col-md-6">
+      <div class="col-lg-8 col-md-6">
         <div class="tab-content-header">
           <div class="d-flex justify-content-start align-items-center">
             <h2 class="pe-3">শিরোনাম</h2>
@@ -59,8 +76,8 @@
           <hr>
         </div>
         <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-            tabindex="0">
+          <div class="tab-pane fade show active" id="v-pills-end-news" role="tabpanel"
+            aria-labelledby="v-pills-end-news-tab" tabindex="0">
             <div class="row">
               <div class="col-lg-6 col-md-6">
                 <div class="content">
@@ -208,21 +225,23 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+          <div class="tab-pane fade" id="v-pills-notice" role="tabpanel" aria-labelledby="v-pills-notice-tab"
             tabindex="0">
-            ...
+            নোটিশ বোর্ড
           </div>
-          <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab"
+          <div class="tab-pane fade" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab"
             tabindex="0">
-            ...</div>
-          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+            আদেশ/প্রজ্ঞাপন/নীতিমালা/পরিপত্র</div>
+          <div class="tab-pane fade" id="v-pills-differtment" role="tabpanel" aria-labelledby="v-pills-differtment-tab"
             tabindex="0">
-            ...</div>
-          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+            বিভাগ সম্পর্কিত</div>
+          <div class="tab-pane fade" id="v-pills-video-gallery" role="tabpanel"
+            aria-labelledby="v-pills-video-gallery-tab" tabindex="0">
+            ভিডিও গ্যালারী</div>
+          <div class="tab-pane fade" id="v-pills-secondary" role="tabpanel" aria-labelledby="v-pills-secondary-tab"
             tabindex="0">
-            ...</div>
+            মাধ্যমিক ও উচ্চ শিক্ষা বিভাগ</div>
         </div>
-
       </div>
     </div>
   </section>
