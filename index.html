@@ -22,13 +22,16 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Ministry of Education</title>
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    <style type="text/css">
+
+    </style>
 </head>
 
 <body>
     <div class="topnav">
         <div class="container">
             <div class="row">
-                <ul class="d-flex align-items-cente justify-content-end pt-1 pb-2">
+                <ul class="d-flex justify-content-end pt-1 pb-2">
                     <li class="d-none d-lg-block px-3"><a href="#"><img src="/assets/icons/Filled-icon-SM.svg"
                                 class="img-fluid topnav-icons" /></a>
                     </li>
@@ -53,13 +56,13 @@
             </div>
         </div>
     </div>
-    <div class="middle-navbar bg-success">
+    <div class="middle-navbar">
         <div class="container">
-            <div class="row">
+            <div class="row p-0 m-0">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
+                    <div class="container-fluid px-1">
                         <a class="navbar-brand" href="#">
-                            <div class="d-flex gap-3 align-items-center p-0 m-0">
+                            <div class="d-flex gap-3 align-items-center">
                                 <div>
                                     <img src="/assets/icons/bd-logo.svg" class="img-fluid middle-navbar-logo" />
                                 </div>
@@ -73,10 +76,10 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span><i class="fa-solid fa-bars" style="color: #219653"></i></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-block d-lg-none">
+                            <ul class="navbar-nav me-auto pt-5 mb-lg-0 d-block d-lg-none">
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#">Home</a>
                                 </li>
@@ -84,17 +87,22 @@
                                     <a class="nav-link" href="#">About Me</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Areas of Expertise
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
+                                        <li><a class="dropdown-item" href="#">Early childhood education and care</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><a class="dropdown-item" href="#">General education</a></li>
+                                        <li><a class="dropdown-item" href="#">Vocational education and training</a></li>
+                                        <li><a class="dropdown-item" href="#">Student financial aid</a></li>
+                                        <li><a class="dropdown-item" href="#">Student financial aid</a></li>
+                                        <li><a class="dropdown-item" href="#">Early childhood education and care</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Religious affairs</a></li>
+                                        <li><a class="dropdown-item" href="#">Early childhood education and care</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -120,67 +128,258 @@
     <div class="nav-bar d-none d-lg-block">
         <div class="container">
             <div class="row">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <div class="d-flex">
-                                <div class="collapse navbar-collapse" id="navbarSupportedContents">
-                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li class="nav-item">
-                                            <a class="nav-link active d-flex gap-2 align-items-cente"
-                                                aria-current="page" href="#"><img
-                                                    src="/assets/icons/Filled-icon-round.svg" /> Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">About Me</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Areas of Expertise
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li>
-                                                    <hr class="dropdown-divider">
-                                                </li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Ministry</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Division</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">News</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact
-                                                Me</a>
-                                        </li>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid ps-0 pe-2">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main_nav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active"> <a class="nav-link active d-flex gap-2 align-items-cente"
+                                        aria-current="page" href="#"><img src="/assets/icons/Filled-icon-round.svg" />
+                                        Home</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Me</a>
+                                </li>
+                                <li class="nav-item dropdown has-megamenu">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Areas of
+                                        Expertise
+                                    </a>
+                                    <div class="dropdown-menu megamenu dropdown-megamenu-style" role="menu"
+                                        style="margin-top: 13px; border-top: none;">
+                                        <div class="px-5">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3 py-2">
+                                                    <a href="#">
+                                                        <div class="area-of-expertise-items">
+                                                            Early childhood education and care
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 py-2">
+                                                    <a href="#">
+                                                        <div class="area-of-expertise-items">
+                                                            General education
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 py-2">
+                                                    <a href="#">
+                                                        <div class="area-of-expertise-items">
+                                                            Vocational education and training
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 py-2"> </div>
+                                                <div class="col-sm-6 col-md-3 py-2">
+                                                    <a href="#">
+                                                        <div class="area-of-expertise-items">
+                                                            Student financial aid
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 py-2">
+                                                    <a href="#">
+                                                        <div class="area-of-expertise-items">
+                                                            Student financial aid
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 py-2">
+                                                    <a href="#">
+                                                        <div class="area-of-expertise-items">
+                                                            Early childhood education and care
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 py-2"> </div>
+                                                <div class="col-sm-6 col-md-3 py-2">
+                                                    <a href="#">
+                                                        <div class="area-of-expertise-items">
+                                                            Religious affairs
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 py-2">
+                                                    <a href="#">
+                                                        <div class="area-of-expertise-items">
+                                                            Early childhood education and care
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Ministry</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Division</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact
+                                        Me</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto">
+                                <div class="nav-bar-lang">
+                                    <ul class="d-flex">
+                                        <li class="lang-en"><a href="#">ENG</a></li>
+                                        <li class="border"></li>
+                                        <li class="lang-bn"><a href="#">বাংলা</a></li>
                                     </ul>
                                 </div>
-                            </div>
-                        </nav>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="nav-bar-lang">
-                        <ul class="d-flex">
-                            <li class="lang-en"><a href="#">ENG</a></li>
-                            <li class="border"></li>
-                            <li class="lang-bn"><a href="#">বাংলা</a></li>
-                        </ul>
-                    </div>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
     <div class="hero-section">
         <div class="container">
+            <div class="row p-0 m-0">
+                <div class="col-sm-12 col-md-7 col-lg-7 col-xl-8 p-0">
+                    <div class="card h-100 border-0">
+                        <img src="/assets/images/image-1.png" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-4 p-0">
+                    <div class="card h-100 border-0">
+                        sss
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="major-initiatives">
+        <div class="container">
+            <h1 class="major-initiatives-title">Major Initiatives</h1>
+            <hr />
             <div class="row">
-                <h1>Hero Section</h1>
+                <div class="col-sm-6 col-md-6 col-lg-4 py-2">
+                    <div class="card rounded-end major-initiatives-card border-0 shadow-lg">
+                        <div class="d-flex">
+                            <div class="major-initiatives-card-left">
+                                <img src="/assets/images/image-2.png" class="img-fluid" />
+                            </div>
+                            <div class="major-initiatives-card-right p-2">
+                                <h5 class="">Book distribution begins across Bangladesh</h5>
+                                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum
+                                    dolor sit amet,
+                                    consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit</p>
+                                <a href="#" class="float-end pt-1"><i class="fa-solid fs-5 fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 py-2">
+                    <div class="card rounded-end major-initiatives-card border-0 shadow-lg">
+                        <div class="d-flex">
+                            <div class="major-initiatives-card-left">
+                                <img src="/assets/images/image-2.png" class="img-fluid" />
+                            </div>
+                            <div class="major-initiatives-card-right p-2">
+                                <h5 class="">উপবৃত্তির টাকা</h5>
+                                <p class="mt-2">অর্থের অভাবে শিক্ষার সুযোগ বঞ্চিত দরিদ্র ও মেধাবী ছাত্র-ছাত্রীদের শিক্ষা
+                                    নিশ্চিত করার উদ্দেশ্যে বৃত্তি প্রদানের জন্য মাননীয় প্রধানমন্ত্রী শেখ হাসিনা ২০
+                                    এপ্রিল, ২০১০ খ্রি: তারিখে একটি ট্রাস্ট ফাণ্ড গঠনের লক্ষ্যে পরিকল্পনা মন্ত্রণালয়কে
+                                    একটি লিখিত নির্দেশনা প্রদান করেন। এ ফাণ্ড গঠনের সম্ভাব্যতা পরীক্ষাপূর্বক প্রয়োজনীয়
+                                    সুপারিশমালা প্রণয়নের জন্য মাননীয় পরিকল্পনামন্ত্রীকে আহবায়ক করে মন্ত্রিপরিষদ বিভাগ
+                                    কর্তৃক ১৪ সদস্যবিশিষ্ট একটি কমিটি গঠন করা হয়। এছাড়া প্রধানমন্ত্রীর কার্যালয়ের মুখ্য
+                                    সচিব কে আহবায়ক করে ট্রাস্ট ফাণ্ড গঠন ও বাস্তবায়নের লক্ষ্যে নীতিমালা প্রণয়নের জন্য
+                                    একটি উপ-কমিটি গঠন করা হয়। মুখ্যসচিব, প্রধানমন্ত্রীর কার্যালয় এর সভাপতিত্বে অনুষ্ঠিত
+                                    ৯ আগস্ট, ২০১০ খ্রি: তারিখের সভায় শিক্ষা মন্ত্রণালয়ের অতিরিক্ত সচিব (উন্নয়ন) কে
+                                    আহবায়ক করে একটি টেকনিক্যাল উপ-কমিটি গঠন করা হয়। এ বিষয়ে পরিকল্পনা মন্ত্রণালয়ের
+                                    মাননীয় মন্ত্রীর সভাপতিত্বে ৫ টি সভা অনুষ্ঠিত হয়। সভার সিদ্ধান্তের আলোকে শিক্ষা
+                                    মন্ত্রণালয়ের ৩১ জানুয়ারি, ২০১১ খ্রি: তারিখের পত্রে ট্রাস্ট ফাণ্ড গঠন সম্পর্কিত
+                                    প্রতিবেদন, নীতিমালা ও আইনের খসড়া পরিকল্পনা কমিশনে পেশ করা হয়।</p>
+                                <a href="#" class="float-end pt-1"><i class="fa-solid fs-5 fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 py-2">
+                    <div class="card rounded-end major-initiatives-card border-0 shadow-lg">
+                        <div class="d-flex">
+                            <div class="major-initiatives-card-left">
+                                <img src="/assets/images/image-2.png" class="img-fluid" />
+                            </div>
+                            <div class="major-initiatives-card-right p-2">
+                                <h5 class="">Skill-based New curriculum for secondary and higher secondary levels</h5>
+                                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum
+                                    dolor sit amet,
+                                    consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit</p>
+                                <a href="#" class="float-end pt-1"><i class="fa-solid fs-5 fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-headline">
+        <div class="container">
+            <h1 class="section-headline-title">Section Headline</h1>
+            <hr />
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 py-2">
+                    <div class="card rounded-end section-headline-card shadow-lg pt-3 ps-3 pb-3 h-100">
+                        <h2>Early Childhood</h2>
+                        <h4 class="line-animate-1 my-3"></h4>
+                        <p class="pb-4 pe-2">Includes information for early childhood education and care providers and
+                            services.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 py-2">
+                    <div class="card rounded-end section-headline-card shadow-lg pt-3 ps-3 pb-3 h-100">
+                        <h2>Schooling</h2>
+                        <h4 class="line-animate-2 my-3"></h4>
+                        <p class="pb-4 pe-2">Includes information for early childhood education and care providers and
+                            services.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 py-2">
+                    <div class="card rounded-end section-headline-card shadow-lg pt-3 ps-3 pb-3 h-100">
+                        <h2>Higher Education</h2>
+                        <h4 class="line-animate-3 my-3"></h4>
+                        <p class="pb-4 pe-2">Includes information for early childhood education and care providers and
+                            services.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 py-2">
+                    <div class="card rounded-end section-headline-card shadow-lg pt-3 ps-3 pb-3 h-100">
+                        <h2>International Education</h2>
+                        <h4 class="line-animate-4 my-3"></h4>
+                        <p class="pb-4 pe-2">Includes information for early childhood education and care providers and
+                            services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="headline">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <h1 class="headline-title">Headline</h1>
+                    <p class="headline-title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Here you can
+                        use rows and columns to
+                        organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-9">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">1</div>
+                        <div class="col-sm-6 col-md-6">2</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
