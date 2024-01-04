@@ -723,6 +723,39 @@ body {
 }
 
 /* headline end */
+/* all-links start */
+.all-links {
+  margin-bottom: 3rem;
+}
+
+.all-links ul li:first-child {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: #219653;
+  text-overflow: ellipsis;
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #219653;
+}
+
+.all-links ul li {
+  overflow: hidden;
+  color: #999;
+  text-overflow: ellipsis;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* all-links end */
 /* footer start */
 .footer {
   background: #F4FAF6;
