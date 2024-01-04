@@ -259,7 +259,6 @@ body {
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
-  line-height: 40px;
 }
 
 .major-initiatives .major-initiatives-card-left {
@@ -582,11 +581,15 @@ body {
 
 .section-headline-second .card:hover {
   border-color: #000;
+  border-radius: 0px;
 }
+
 .section-headline-second .card:hover .body-card {
   background-color: #219653;
   border-color: #000;
+  border-radius: 0px;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -720,11 +723,66 @@ body {
 }
 
 /* headline end */
+/* footer start */
+.footer {
+  background: #F4FAF6;
+}
+
+.footer .about-me h3 {
+  color: #424242;
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.footer .about-me p {
+  color: #424242;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.footer .contact h3 {
+  color: #424242;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.footer .contact h6 {
+  color: #424242;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* footere end */
+/* footer-bottom start */
+.footer-bottom {
+  background-color: var(--bg_green-primary);
+  color: #FFF;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* footer-bottom end */
 /* media query start */
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .middle-navbar {
-    /* padding-top: 5px;
-    padding-bottom: 5px; */
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+  .footer .about-me {
+    width: 40%;
   }
 }
 
