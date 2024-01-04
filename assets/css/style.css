@@ -723,6 +723,94 @@ body {
 }
 
 /* headline end */
+/* our-divisions start */
+.our-divisions {
+  margin: 40px 0px;
+}
+
+.our-divisions .partner-title h1 {
+  color: #219653;
+  font-family: Encode Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  max-width: 300px;
+}
+
+.our-divisions .partner-title p {
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.60);
+  text-overflow: ellipsis;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  max-width: 575px;
+}
+
+.our-divisions .divisions-card {
+  border-radius: 6px;
+  padding: 24px;
+  background: var(--Surface-Forground-Background, #F4FAF6);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.10), 0px 0px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.our-divisions .divisions-card h3 {
+  color: #219653;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Public Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* our-divisions end */
+/* our-partners start */
+.our-partners {
+  margin: 40px 0px;
+}
+
+.our-partners .partner-title h1 {
+  color: #219653;
+  font-family: Encode Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  max-width: 300px;
+}
+
+.our-partners .partner-title p {
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.60);
+  text-overflow: ellipsis;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  max-width: 575px;
+}
+
+.our-partners .partner-card {
+  border-radius: 6px;
+  background: var(--Surface-Forground-Background, #FFF);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.10), 0px 0px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* our-partners end */
 /* all-links start */
 .all-links {
   margin-bottom: 3rem;
