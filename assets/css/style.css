@@ -723,6 +723,88 @@ body {
 }
 
 /* headline end */
+/* our-initiatives start */
+.our-initiatives {
+  margin: 40px 0px;
+}
+
+.our-initiatives .initiatives-title {
+  color: #219653;
+  font-family: Encode Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  padding: 20px 0px 0px 0px;
+}
+
+.our-initiatives .our-initiatives-card {
+  position: relative;
+}
+
+.our-initiatives .our-initiatives-card .date {
+  position: absolute;
+  top: 10px;
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.our-initiatives .our-initiatives-card .card-bottom {
+  position: absolute;
+  bottom: 35px;
+}
+
+.our-initiatives .our-initiatives-card .card-bottom .title-link {
+  overflow: hidden;
+  color: var(--White, #FFF);
+  leading-trim: both;
+  text-edge: cap;
+  text-overflow: ellipsis;
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.our-initiatives .our-initiatives-card .card-bottom .paragraph {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-right: 25px;
+  color: var(--text_white);
+}
+
+.our-initiatives .our-initiatives-card .card-bottom .read-more-btn a{
+  color: #EDC8A3;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Nunito Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+/* our-initiatives end */
 /* our-divisions start */
 .our-divisions {
   margin: 40px 0px;
@@ -757,11 +839,6 @@ body {
 .our-divisions .divisions-card {
   border-radius: 6px;
   padding: 24px;
-  background: var(--Surface-Forground-Background, #F4FAF6);
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.10), 0px 0px 1px 0px rgba(0, 0, 0, 0.10);
-}
-
-.our-divisions .divisions-card h3 {
   color: #219653;
   text-align: center;
   font-feature-settings: 'clig' off, 'liga' off;
@@ -770,6 +847,13 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  background: var(--Surface-Forground-Background, #F4FAF6);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.10), 0px 0px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.our-divisions .divisions-card:hover {
+  color: var(--text_white);
+  background: var(--bg_green-primary);
 }
 
 /* our-divisions end */
