@@ -51,8 +51,10 @@ body {
 
 /* top nav start */
 .topnav {
-  background: var(--GradientTop,
-      linear-gradient(270deg, #219653 70.63%, #18703d 89.51%));
+  background: var(
+    --GradientTop,
+    linear-gradient(270deg, #219653 70.63%, #18703d 89.51%)
+  );
 }
 
 .topnav-icons {
@@ -232,7 +234,7 @@ body {
   left: 0px;
   position: absolute;
   border-radius: 0px 40px 40px 0px;
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .hero-section .right-arrow-btn {
@@ -241,7 +243,7 @@ body {
   position: absolute;
   right: 0px;
   border-radius: 40px 0px 00px 40px;
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .hero-section .accordion .accordion-item .accordion-button {
@@ -251,17 +253,16 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
-
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
 }
 
 .hero-section .accordion .accordion-button:not(.collapsed) {
   background-color: transparent;
   box-shadow: none;
   color: #003087;
-  overflow: hidden !important;
-  display: -webkit-box !important;
-  -webkit-line-clamp: 2 !important;
-  -webkit-box-orient: vertical !important;
 }
 
 .hero-section .accordion .accordion-button.accordion-button::after {
@@ -272,7 +273,7 @@ body {
   content: "";
   background-repeat: no-repeat;
   background-size: 1.25rem;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   display: none;
 }
 
@@ -293,7 +294,7 @@ body {
 }
 
 .hero-section .accordion .accordion-item .accordion-body h3 {
-  color: #FFF;
+  color: #fff;
   font-family: Segoe UI;
   font-size: 20px;
   font-style: normal;
@@ -307,7 +308,7 @@ body {
 
 .hero-section .accordion .accordion-item .accordion-body p {
   overflow: hidden;
-  color: #FFF;
+  color: #fff;
   text-overflow: ellipsis;
   font-family: Segoe UI;
   font-size: 14px;
@@ -317,7 +318,7 @@ body {
   text-align: justify;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
 }
 
@@ -327,8 +328,8 @@ body {
   gap: 10px;
   flex-shrink: 0;
   border-radius: var(--Medium, 4px);
-  border: 1px solid #FFF;
-  color: #FFF;
+  border: 1px solid #fff;
+  color: #fff;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -355,7 +356,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   color: white;
   font-size: 20px;
@@ -554,15 +555,27 @@ body {
 
 /* section-headline end */
 /* hundred-global-collection start */
+
 .hundred-global-collection {
   margin: 20px 0px;
   background: #f1f1f1;
   border-radius: 6px;
 }
-
-.hundred-global-collection .hundred-global-collection-left {
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+.hundred-global-collection .hundred-left-img {
+  clip-path: polygon(32% 0, 100% 0%, 100% 100%, 8% 100%);
+}
+.hundred-global-collection .angled-section {
+  position: relative;
+  height: 100%;
   background-color: #219653;
+}
+.hundred-global-collection .angled-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-bottom: 325px solid transparent;
+  border-left: 60px solid #219653;
 }
 
 .hundred-global-collection .hundred-global-collection-left .title {
@@ -574,11 +587,6 @@ body {
   line-height: 40px;
   padding: 20% 20% 20% 30%;
   z-index: 1000;
-}
-
-.hundred-global-collection .hundred-global-collection-left .image {
-  z-index: 999;
-  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .hundred-global-collection .hundred-global-collection-right {
@@ -618,11 +626,16 @@ body {
   height: 93px;
 }
 
-.hundred-global-collection .hundred-global-collection-right .hundred-global-collection-btn {
+.hundred-global-collection
+  .hundred-global-collection-right
+  .hundred-global-collection-btn {
   margin-left: 20%;
 }
 
-.hundred-global-collection .hundred-global-collection-right .hundred-global-collection-btn a {
+.hundred-global-collection
+  .hundred-global-collection-right
+  .hundred-global-collection-btn
+  a {
   padding: var(--Medium, 4px) 16px;
   gap: 10px;
   border-radius: 3px;
@@ -679,7 +692,7 @@ body {
 .section-headline-second .card-message {
   margin: 20px 20px 7px 20px;
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.60);
+  color: rgba(0, 0, 0, 0.6);
   text-overflow: ellipsis;
   font-family: Segoe UI;
   font-size: 14px;
@@ -736,7 +749,7 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: var(--bg_white);
 }
 
@@ -744,7 +757,10 @@ body {
   opacity: 1;
 }
 
-.section-headline-second .card:hover .section-headline-second-image .bottom-left {
+.section-headline-second
+  .card:hover
+  .section-headline-second-image
+  .bottom-left {
   background-color: #219653;
   color: var(--text_white);
   position: absolute;
@@ -886,7 +902,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   color: white;
   font-size: 20px;
@@ -903,7 +919,7 @@ body {
 .our-initiatives .our-initiatives-card .date {
   position: absolute;
   top: 10px;
-  color: #FFF;
+  color: #fff;
   leading-trim: both;
   text-edge: cap;
   font-family: Lato;
@@ -921,7 +937,7 @@ body {
 
 .our-initiatives .our-initiatives-card .card-bottom .title-link {
   overflow: hidden;
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   leading-trim: both;
   text-edge: cap;
   text-overflow: ellipsis;
@@ -955,7 +971,7 @@ body {
 }
 
 .our-initiatives .our-initiatives-card .card-bottom .read-more-btn a {
-  color: #EDC8A3;
+  color: #edc8a3;
   leading-trim: both;
   text-edge: cap;
   font-family: Nunito Sans;
@@ -984,7 +1000,7 @@ body {
 
 .our-divisions .partner-title p {
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.60);
+  color: rgba(0, 0, 0, 0.6);
   text-overflow: ellipsis;
   font-family: Segoe UI;
   font-size: 14px;
@@ -1003,14 +1019,15 @@ body {
   padding: 24px;
   color: #219653;
   text-align: center;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-feature-settings: "clig" off, "liga" off;
   font-family: Public Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  background: var(--Surface-Forground-Background, #F4FAF6);
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.10), 0px 0px 1px 0px rgba(0, 0, 0, 0.10);
+  background: var(--Surface-Forground-Background, #f4faf6);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .our-divisions .divisions-card:hover {
@@ -1108,8 +1125,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 48px;
-  border: 5px solid #FFF;
-  background: rgba(255, 255, 255, 0.50);
+  border: 5px solid #fff;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .light-box-img:hover img {
@@ -1166,7 +1183,7 @@ body {
 
 .our-partners .partner-title p {
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.60);
+  color: rgba(0, 0, 0, 0.6);
   text-overflow: ellipsis;
   font-family: Segoe UI;
   font-size: 14px;
@@ -1182,8 +1199,9 @@ body {
 
 .our-partners .partner-card {
   border-radius: 6px;
-  background: var(--Surface-Forground-Background, #FFF);
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.10), 0px 0px 1px 0px rgba(0, 0, 0, 0.10);
+  background: var(--Surface-Forground-Background, #fff);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* our-partners end */
@@ -1263,7 +1281,7 @@ body {
 /* footer-bottom start */
 .footer-bottom {
   background-color: var(--bg_green-primary);
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -1279,6 +1297,16 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .hundred-global-collection .angled-section::before {
+    left: 0%;
+    border-bottom: 0px solid transparent;
+  }
+  .hundred-global-collection .hundred-global-collection-left .title {
+    font-size: 35px;
+    padding: 25% 20% 20% 20%;
+  }
+}
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
   .headline .card-heading {
     padding: 15px;
@@ -1287,6 +1315,10 @@ body {
   .headline .card-heading .title {
     font-size: 20px;
     /* padding: 0px 0px 10px 0px; */
+  }
+  .hundred-global-collection .angled-section::before {
+    left: 0%;
+    border-bottom: 0px solid transparent;
   }
 }
 
@@ -1302,6 +1334,10 @@ body {
 
   .middle-navbar .title span {
     font-size: 12px;
+  }
+  .hundred-global-collection .angled-section::before {
+    left: 0%;
+    border-bottom: 0px solid transparent;
   }
 }
 
@@ -1322,6 +1358,14 @@ body {
 
   .middle-navbar .title span {
     font-size: 12px;
+  }
+  .hundred-global-collection .angled-section::before {
+    left: 0%;
+    border-bottom: 0px solid transparent;
+  }
+  .hundred-global-collection .hundred-global-collection-left .title {
+    font-size: 35px;
+    padding: 25% 20% 20% 25%;
   }
 }
 
@@ -1345,7 +1389,6 @@ body {
 }
 
 @media (max-width: 991px) {
-
   .navbar.fixed-top .navbar-collapse,
   .navbar.sticky-top .navbar-collapse {
     overflow-y: auto;
