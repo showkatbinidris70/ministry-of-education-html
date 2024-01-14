@@ -253,12 +253,20 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
+  color: #003087;
+}
+.hero-section .accordion .accordion-item .accordion-button p {
   overflow: hidden !important;
   display: -webkit-box !important;
   -webkit-line-clamp: 2 !important;
   -webkit-box-orient: vertical !important;
 }
 
+.hero-section .accordion .accordion-header i {
+  background-color: transparent;
+  box-shadow: none;
+  color: #003087;
+}
 .hero-section .accordion .accordion-button:not(.collapsed) {
   background-color: transparent;
   box-shadow: none;
@@ -306,6 +314,10 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.hero-section .accordion .accordion-item:last-of-type {
+  border-bottom-right-radius: 0rem !important;
+  border-bottom-left-radius: 0rem !important;
+}
 .hero-section .accordion .accordion-item .accordion-body p {
   overflow: hidden;
   color: #fff;
