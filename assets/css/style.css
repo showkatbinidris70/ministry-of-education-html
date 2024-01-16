@@ -457,7 +457,6 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
   height: 40px;
   overflow: hidden;
   display: -webkit-box;
@@ -1373,6 +1372,10 @@ body {
   .hundred-global-collection .angled-section::before {
     left: 0%;
     border-bottom: 0px solid transparent;
+  }
+  .major-initiatives .major-initiatives-card-left {
+    width: 30%;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
   }
 }
 
